@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
+import ProductDetail from "./pages/ProductDetail";
 
 // Yang dikomentari adalah cara lain (old version) dalam menggunakan Router
 // const routeDefinitions = createRoutesFromElements(
@@ -20,7 +21,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { path: '/', element: <Home />},
-      {path: '/products', element: <Products />}
+      {path: '/products', element: <Products />},
+      {path: '/products/:productID', element: <ProductDetail />}
     ]
   },
 ]);
