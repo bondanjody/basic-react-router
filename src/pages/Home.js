@@ -10,7 +10,7 @@ const Home = () => {
 
     return <Fragment>
         <h1>My Home Page.</h1>
-        <p><Link to="/products">Products</Link></p>
+        <p><Link to="products">Products</Link></p>
         <button onClick={navigateHandler}>Go to Products</button>
     </Fragment>
     

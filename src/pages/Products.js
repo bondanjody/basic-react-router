@@ -15,7 +15,7 @@ const Products = () => {
             <li><Link to='/products/product2'>Products 2</Link></li>
             <li><Link to='/products/product3'>Products 3</Link></li> */}
             {PRODUCTS.map(productData => <li key={productData.id}>
-                <Link to={`/products/${productData.id}`}>{productData.title}</Link>
+                <Link to={productData.id}>{productData.title}</Link>
             </li>)}
         </ul>
     </Fragment>

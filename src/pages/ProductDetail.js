@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ProductDetail = () => {
     const params = useParams();
@@ -7,6 +7,7 @@ const ProductDetail = () => {
     return <Fragment>
         <h1>Product Detail</h1>
         <p>{params.productID}</p>
+        <p><Link to='..' relative='path'>Back</Link></p>
     </Fragment>;
 }
 
